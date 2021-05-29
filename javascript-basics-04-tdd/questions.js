@@ -77,46 +77,57 @@ const BMI = (weight, height) => {
     return Math.round(bmi*100)/100;
 }
 
-// const createLanguagesArray = () => {
-
-// }
+const createLanguagesArray = () => {
+    return ["Html","CSS","Java","PHP"];
+}
 
 const createNumbersArray = () => {
-
+    return [0,1,2,3,4,5];
 }
 
 const replaceElement = (languages) => {
-
+    for(var i=0; i < languages.length;i++){
+        languages[i] = languages[i].replace(/Java/i, 'Javascript');
+    }
+    return languages;
 }
 
 const addElement = (languages) => {
-
+     languages.push('Ruby');
+     languages.push('Python');
+     return languages;
 }
 
 const addNumberElement = (numbers) => {
-
+    numbers.unshift(-1);
+    numbers.unshift(-2);
+    return numbers;
 }
 
 const removeFirst = (languages) => {
-
+    languages.shift();
+    return languages;
 }
 
 const removeLast = (languages) => {
-
+    languages.pop();
+    return languages;
 }
 
 const convertStrToArr = (social_arr) => {
-
+    var str=social_arr.split(",");
+    return str;
+  
 }
 
 const convertArrToStr = (languages) => {
-
+    return languages.toString();
 }
 
 const sortArr = (social_arr) => {
-
+    return social_arr.sort();
 }
 
 const invertArr = (social_arr) => {
-
+    return social_arr.reverse();
 }
