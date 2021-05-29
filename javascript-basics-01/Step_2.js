@@ -1,4 +1,4 @@
-var name = "Bassam";
+var firstname = "Bassam";
 var surname = "Hamdar";
 var city = "Beirut";
-alert("Name: "+name+"\n"+ "Surname: "+surname +"\n"+ "City: "+city);
+alert("Name: "+firstname+"\n"+ "Surname: "+surname +"\n"+ "City: "+city);
